@@ -2,7 +2,7 @@ import styles, { layout } from "../style";
 import { features } from "../constants";
 import Button from "./Button";
 const Business = () => {
-  const FeatureCard = ({ icon, content, title }) => (
+  const FeatureCard = ({ icon , content, title }) => (
     <div
       className={` feature-card flex cursor-pointer   items-center justify-between gap-4 p-6 rounded-[20px]`}
     >
