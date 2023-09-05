@@ -1,6 +1,6 @@
 import Button from "./Button";
 import { card } from "../assets";
-import styles,{layout} from "../style";
+import styles, { layout } from "../style";
 
 const CardDeal = () => {
   return (

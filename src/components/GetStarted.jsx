@@ -23,7 +23,6 @@ const GetStarted = () => {
           Started
         </p>
       </div>
-      
     </div>
   );
 };

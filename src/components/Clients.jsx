@@ -1,5 +1,25 @@
+import {clients} from "../constants"
+import styles from "../style"
+
 const Clients = () => {
-  return <div>Clients</div>;
+  return (
+    <section className={`${styles.flexCenter} my-4`}>
+      <div className={`${styles.flexCenter} flex-wrap w-full`}>
+        {clients.map((client, index) => (
+          <div
+            key={index}
+            className={`${styles.flexCenter} flex-1 sm:min-w-[192px] min-w-[120px] `}
+          >
+            <img
+              src={client.logo}
+              alt={client.id}
+              className="sm:w-[192px] w-[100] object-contain fill-black hover:hue-rotate-90"
+            />
+          </div>
+        ))}
+      </div>
+    </section>
+  );
 };
 
 export default Clients;
